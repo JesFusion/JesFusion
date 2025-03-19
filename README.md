@@ -11,15 +11,7 @@
 - **Machine Learning** – Training & fine-tuning models  
 - **Computer Vision** – Object detection, face recognition, real-time tracking  
 - **NLP** – Chatbots, text classification, language modeling  
-  - **AI Deployment** – Flask, FastAPI, and cloud-based AI solutions  
-
-### **📂 Featured Projects**  
-
-#### 🔹 **Sentiment Analysis** 🐶🐱  
-✔ Built with **Naive Bayes and Numpy**  
-✔ Deployed as a web app with Flask  
-
-🔗 [View Project](https://github.com/JesFusion/Dog-Cat-Classifier)  
+- **AI Deployment** – Flask, FastAPI, and cloud-based AI solutions  
 
 
 
@@ -32,13 +24,12 @@
 5. **Version Control**: Git, GitHub  
 
 
-### **📢 Connect With Me**  
+<!--### **📢 Connect With Me**  
 
 📧 **Email**: your-email@example.com  
 🔗 **LinkedIn**: [linkedin.com/in/jesfusion](https://linkedin.com/in/jesfusion)  
 🌐 **GitHub**: [github.com/JesFusion](https://github.com/JesFusion)  
 
-🚀 **Let's build the future of AI together!**  
 
 
 
