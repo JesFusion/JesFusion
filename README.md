@@ -1,5 +1,11 @@
 ## Hi there 👋
 
+I'm Nwachukwu Jesse (JeFusion), a `Machine Learning Engineer`
+
+I'm passionate about Robotics and Artificial Intelligance and i want to share my project with you
+
+
+
 <!--
 **JesFusion/JesFusion** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
