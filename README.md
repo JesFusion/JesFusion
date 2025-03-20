@@ -1,8 +1,8 @@
 # **Hey, I'm Jesse!**  
-### **I'm a Machine Learning Engineer | AI Developer | Computer Vision & NLP**
+### **I'm a Machine Learning Engineer | AI Developer | Computer Vision & NLP Developer**
 ---
 
-### **What I Do**  
+### **What I Do:**  
 - **Machine Learning** – Training & fine-tuning models  
 - **Computer Vision** – Object detection, face recognition, real-time tracking  
 - **NLP** – Chatbots, text classification, language modeling  
@@ -10,7 +10,7 @@
 
 ***
 
-### **Tech Stack & Tools**  
+### **Tech Stack & Tools:**  
 
 1. **Languages**: Python, Java, SQL
 2. **ML & AI**: TensorFlow, PyTorch, Scikit-Learn, OpenCV
