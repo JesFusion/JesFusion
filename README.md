@@ -1,28 +1,22 @@
 # **Hey, I'm Jesse!**  
-### **Machine Learning Engineer | AI Enthusiast | Computer Vision & NLP**  
+### **I'm a Machine Learning Engineer | AI Enthusiast | Computer Vision & NLP**
+---
 
-1. Exploring the depths of **Machine Learning, Computer Vision, and NLP**
-2. Passionate about **building AI-powered applications** that solve real-world problems
-3. Focused on **model building, deployment, and research**
-4. Current Goal: Master **Computer Vision & Model Optimization**  
-
-
-### **🚀 What I Do**  
+### **What I Do**  
 - **Machine Learning** – Training & fine-tuning models  
 - **Computer Vision** – Object detection, face recognition, real-time tracking  
 - **NLP** – Chatbots, text classification, language modeling  
-- **AI Deployment** – Flask, FastAPI, and cloud-based AI solutions  
+- **AI Deployment** – Flask, FastAPI, and cloud-based AI solutions
 
+***
 
-
-### **🛠 Tech Stack & Tools**  
+### **Tech Stack & Tools**  
 
 1. **Languages**: Python, Java, SQL
 2. **ML & AI**: TensorFlow, PyTorch, Scikit-Learn, OpenCV
-3. **Data Science**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
+3. **Data Science**: Pandas, NumPy, Matplotlib, Seaborn
 4. **Deployment**: Flask, FastAPI, Streamlit
-5. **Version Control**: Git, GitHub  
-
+5. **Version Control**: Git, GitHub
 
 <!--### **📢 Connect With Me**  
 
