@@ -1,5 +1,5 @@
 # **Hey, I'm Jesse!**  
-### **I'm a Machine Learning Engineer | AI Enthusiast | Computer Vision & NLP**
+### **I'm a Machine Learning Engineer | AI Developer | Computer Vision & NLP**
 ---
 
 ### **What I Do**  
