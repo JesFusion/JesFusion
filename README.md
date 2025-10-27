@@ -12,7 +12,7 @@
 
 ### **Tech Stack & Tools:**  
 
-1. **Languages**: Python, Java, JavaScript, SQL
+1. **Languages**: Python, SQL, Spark
 2. **ML & AI**: TensorFlow, PyTorch, Scikit-Learn, OpenCV
 3. **Data Science**: Pandas, NumPy, Matplotlib, Seaborn
 4. **Deployment**: Flask, FastAPI, Streamlit
