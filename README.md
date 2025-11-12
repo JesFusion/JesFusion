@@ -1,4 +1,4 @@
-# **Hey, I'm Jesse!**  
+# Hey, I'm `Nwachukwu Jesse Chijioke!`
 ### **I'm a Machine Learning Engineer**
 ---
 
