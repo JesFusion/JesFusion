@@ -1,25 +1,20 @@
 # Hey, I'm `Nwachukwu Jesse Chijioke!`
-### **I'm a Machine Learning Engineer**
+### **Machine Learning & MLOps Engineer**
 ---
 
-### **What I Do:**  
-- **Machine Learning** – Training & fine-tuning models  
-- **Computer Vision** – Object detection, face recognition, real-time tracking  
-- **NLP** – Chatbots, text classification, language modeling  
-- **AI Deployment** – Flask, FastAPI, and cloud-based AI solutions
+### **What I Do:**
+**MLOps & Infrastructure** **–->** Building end-to-end pipelines, Dockerizing applications, and automating workflows (CI/CD).
+- **Model Deployment** – Serving production-ready models using FastAPI and cloud solutions.
+- **Machine Learning** – Training, validating, and monitoring predictive models for real-world reliability.
+- **Data Engineering** – efficient data extraction (SQL) and processing pipelines.
 
 ***
 
-### **Tech Stack & Tools:**  
-
-1. **Languages**: Python, SQL, Spark
-2. **ML & AI**: TensorFlow, PyTorch, Scikit-Learn, OpenCV
-3. **Data Science**: Pandas, NumPy, Matplotlib, Seaborn
-4. **Deployment**: Flask, FastAPI, Streamlit
+### **Tech Stack & Tools:**
+1. **Languages**: Python, SQL, Bash
+2. **MLOps & Deployment**: Docker, FastAPI, Flask, GitHub Actions
+3. **Machine Learning**: Scikit-Learn, NumPy, Pandas
+4. **Data & Visualization**: PostgreSQL, Matplotlib, Seaborn
 5. **Version Control**: Git, GitHub
 
-### **Connect With Me**  
-
-**Email**: jesfusionprox@gmail.com  
-<!-- 🔗 **LinkedIn**: [linkedin.com/in/jesfusion](https://linkedin.com/in/jesfusion)  
-🌐 **GitHub**: [github.com/JesFusion](https://github.com/JesFusion)  
+### **Connect With Me** **Email**: jesfusionprox@gmail.com
