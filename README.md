@@ -1,4 +1,4 @@
-# Hey, I'm `Nwachukwu Jesse Chijioke!`
+# Hey, I'm `Nwachukwu Jesse Chijioke`!
 ### **Machine Learning & MLOps Engineer**
 ---
 
@@ -19,8 +19,10 @@
 5. **Monitoring & Observability**: Prometheus, Grafana, Evidently AI
 6. **Core ML**: Scikit-Learn, Pandas, NumPy
 
+---
+
 ### **Connect With Me**
 
-**Email**: jesfusionprox@gmail.com  
+- **Email**: jesfusionprox@gmail.com  
+- **GitHub**: [github.com/JesFusion](https://github.com/JesFusion)
 <!-- 🔗 **LinkedIn**: [linkedin.com/in/jesfusion](https://linkedin.com/in/jesfusion) -->
-<!-- 🌐 **GitHub**: [github.com/JesFusion](https://github.com/JesFusion) -->
