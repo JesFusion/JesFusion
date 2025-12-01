@@ -14,8 +14,8 @@
 
 1. **Languages**: Python, SQL, Bash
 2. **Infrastructure & Cloud**: Docker, Kubernetes, AWS, Linux
-3. **Orchestration & CI/CD**: Apache Airflow, GitHub Actions<!--, Jenkins -->
-4. **Model Serving & Tracking**: FastAPI, MLflow<!--, Ray Serve -->
+3. **Orchestration & CI/CD**: Apache Airflow, GitHub Actions, Jenkins
+4. **Model Serving & Tracking**: FastAPI, MLflow, Ray Serve
 5. **Monitoring & Observability**: Prometheus, Grafana, Evidently AI
 6. **Core ML**: Scikit-Learn, Pandas, NumPy
 
