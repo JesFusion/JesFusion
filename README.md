@@ -3,18 +3,24 @@
 ---
 
 ### **What I Do:**
-**MLOps & Infrastructure** **–->** Building end-to-end pipelines, Dockerizing applications, and automating workflows (CI/CD).
-- **Model Deployment** – Serving production-ready models using FastAPI and cloud solutions.
-- **Machine Learning** – Training, validating, and monitoring predictive models for real-world reliability.
-- **Data Engineering** – efficient data extraction (SQL) and processing pipelines.
+- **End-to-End MLOps** – Architecting scalable pipelines from data ingestion to deployment.
+- **Infrastructure Automation** – Containerization (Docker), Orchestration, and CI/CD workflows.
+- **Model Observability** – Monitoring model drift, performance, and reliability in production.
+- **Machine Learning** – Building robust predictive systems that drive business value.
 
 ***
 
 ### **Tech Stack & Tools:**
-1. **Languages**: Python, SQL, Bash
-2. **MLOps & Deployment**: Docker, FastAPI, Flask, GitHub Actions
-3. **Machine Learning**: Scikit-Learn, NumPy, Pandas
-4. **Data & Visualization**: PostgreSQL, Matplotlib, Seaborn
-5. **Version Control**: Git, GitHub
 
-### **Connect With Me** **Email**: jesfusionprox@gmail.com
+1. **Languages**: Python, SQL, Bash
+2. **Infrastructure & Cloud**: Docker, Kubernetes, AWS, Linux
+3. **Orchestration & CI/CD**: Apache Airflow, GitHub Actions<!--, Jenkins -->
+4. **Model Serving & Tracking**: FastAPI, MLflow<!--, Ray Serve -->
+5. **Monitoring & Observability**: Prometheus, Grafana, Evidently AI
+6. **Core ML**: Scikit-Learn, Pandas, NumPy
+
+### **Connect With Me**
+
+**Email**: jesfusionprox@gmail.com  
+<!-- 🔗 **LinkedIn**: [linkedin.com/in/jesfusion](https://linkedin.com/in/jesfusion) -->
+<!-- 🌐 **GitHub**: [github.com/JesFusion](https://github.com/JesFusion) -->
