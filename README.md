@@ -1,4 +1,4 @@
-# Hi, I'm Nwachukwu Jesse Chijioke 👋
+# Hi, I'm Nwachukwu Jesse Chijioke
 
 ### **Machine Learning & MLOps Engineer**
 *Building scalable intelligent systems and robust data infrastructure.*
