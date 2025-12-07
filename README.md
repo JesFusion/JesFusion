@@ -1,28 +1,41 @@
-# Hey, I'm `Nwachukwu Jesse Chijioke`!
+# Hi, I'm Nwachukwu Jesse Chijioke 👋
+
 ### **Machine Learning & MLOps Engineer**
+*Building scalable intelligent systems and robust data infrastructure.*
+
 ---
 
-### **What I Do:**
-- **End-to-End MLOps** – Architecting scalable pipelines from data ingestion to deployment.
+### **What I Build**
+
+I operate at the intersection of **Machine Learning** and **DevOps**, ensuring that models don't just stay in notebooks but drive value in production.
+
+#### **Core Specialization (MLOps)**
+- **End-to-End Pipelines** – Architecting workflows from data ingestion to model deployment.
 - **Infrastructure Automation** – Containerization (Docker), Orchestration, and CI/CD workflows.
-- **Model Observability** – Monitoring model drift, performance, and reliability in production.
-- **Machine Learning** – Building robust predictive systems that drive business value.
+- **Model Observability** – Monitoring drift, performance, and reliability in real-time.
 
-***
+#### **Data Engineering & Automation Services** (Open for Freelance)
+- **Data Cleaning & ETL** – Transforming messy raw data (CSV/Excel/JSON) into analysis-ready formats using **Pandas**.
+- **Workflow Automation** – Writing robust Python scripts to automate reporting, scraping, and daily tasks.
+- **Database Management** – Designing schemas and managing data flow into **PostgreSQL**.
 
-### **Tech Stack & Tools:**
 
-1. **Languages**: Python, SQL, Bash
-2. **Infrastructure & Cloud**: Docker, Kubernetes, AWS, Linux
-3. **Orchestration & CI/CD**: Apache Airflow, GitHub Actions, Jenkins
-4. **Model Serving & Tracking**: FastAPI, MLflow, Ray Serve
-5. **Monitoring & Observability**: Prometheus, Grafana, Evidently AI
-6. **Core ML**: Scikit-Learn, Pandas, NumPy
+## **Tech Stack**
+
+| **Domain** | **Tools & Technologies** |
+| :--- | :--- |
+| **Languages** | Python, SQL, Bash |
+| **Data Engineering** | Pandas, NumPy, PostgreSQL, Apache Airflow |
+| **Infrastructure** | Docker, Kubernetes, AWS, Linux |
+| **CI/CD & DevOps** | GitHub Actions, Jenkins, Git |
+| **ML & Serving** | Scikit-Learn, MLflow, FastAPI, Ray Serve |
+| **Observability** | Prometheus, Grafana, Evidently AI |
 
 ---
 
-### **Connect With Me**
+### **Let's work together!**
 
-- **Email**: jesfusionprox@gmail.com  
+I am open to **MLOps collaborations** and **Data Engineering contracts**.
+
+- **Email**: [jesfusionprox@gmail.com](mailto:jesfusionprox@gmail.com)
 - **GitHub**: [github.com/JesFusion](https://github.com/JesFusion)
-<!-- 🔗 **LinkedIn**: [linkedin.com/in/jesfusion](https://linkedin.com/in/jesfusion) -->
