@@ -1,41 +1,47 @@
-# Hi, I'm Nwachukwu Jesse Chijioke
+# Hi, I'm Nwachukwu Jesse Chijioke 👋
 
-### **Machine Learning & MLOps Engineer**
-*Building scalable intelligent systems and robust data infrastructure.*
+### **DevOps & Cloud Automation Engineer**
+*Architecting high-availability infrastructure, automated pipelines, and cloud-native systems.*
 
 ---
 
-### **What I Build**
+### **Core Focus**
 
-I operate at the intersection of **Machine Learning** and **DevOps**, ensuring that models don't just stay in notebooks but drive value in production.
+I am a DevOps Engineer dedicated to eliminating manual workflows, securing infrastructure, and building fast, resilient continuous delivery pipelines. 
 
-#### **Core Specialization (MLOps)**
-- **End-to-End Pipelines** – Architecting workflows from data ingestion to model deployment.
-- **Infrastructure Automation** – Containerization (Docker), Orchestration, and CI/CD workflows.
-- **Model Observability** – Monitoring drift, performance, and reliability in real-time.
+Coming from a background handling data architecture and machine learning systems (MLOps), I bring unique value to core engineering operations. I excel at containerizing complex software, handling data-heavy workloads, and architecting self-healing environments where reliability is non-negotiable.
 
-#### **Data Engineering & Automation Services** (Open for Freelance)
-- **Data Cleaning & ETL** – Transforming messy raw data (CSV/Excel/JSON) into analysis-ready formats using **Pandas**.
-- **Workflow Automation** – Writing robust Python scripts to automate reporting, scraping, and daily tasks.
-- **Database Management** – Designing schemas and managing data flow into **PostgreSQL**.
+#### **What I Bring to Engineering Teams**
+- **CI/CD & Pipeline Automation** – Designing multi-stage validation and deployment pipelines using **GitHub Actions** and Git workflows to accelerate ship-to-production speeds.
+- **Containerization & Orchestration** – Building highly optimized, secure images with **Docker** and managing container microservices.
+- **Infrastructure as Code (IaC)** – Moving cloud architectures away from manual configurations into repeatable, version-controlled code using **Terraform**.
+- **Observability & Health Checks** – Setting up structured application logging (Python logging), testing routines (**Pytest**), and real-time infrastructure metrics.
 
+---
 
 ## **Tech Stack**
 
 | **Domain** | **Tools & Technologies** |
 | :--- | :--- |
-| **Languages** | Python, SQL, Bash |
-| **Data Engineering** | Pandas, NumPy, PostgreSQL, Apache Airflow |
-| **Infrastructure** | Docker, Kubernetes, AWS, Linux |
-| **CI/CD & DevOps** | GitHub Actions, Jenkins, Git |
-| **ML & Serving** | Scikit-Learn, MLflow, FastAPI, Ray Serve |
-| **Observability** | Prometheus, Grafana, Evidently AI |
+| **Cloud Platforms** | Amazon Web Services (AWS) |
+| **Infrastructure as Code**| Terraform |
+| **CI/CD & Automation** | GitHub Actions, Git, Shell Scripting (Bash) |
+| **Containers & Systems** | Docker, Docker Compose, Linux Architecture |
+| **Testing & Scripting** | Python, Pytest, Logging Pipelines |
+| **Observability** | Prometheus, Grafana, Centralized Logging |
 
 ---
 
-### **Let's work together!**
+### **Projects I'm Working On**
+*   🛠️ **Cloud Infrastructure Automation:** Provisioning secure AWS VPC networks and compute clusters dynamically via Terraform.
+*   🚀 **Production Pipelines:** Crafting modular GitHub Action workflows that auto-test Python environments, run Pytest constraints, build Docker images, and ship to cloud registries.
 
-I am open to **MLOps collaborations** and **Data Engineering contracts**.
+---
 
-- **Email**: [jesfusionprox@gmail.com](mailto:jesfusionprox@gmail.com)
-- **GitHub**: [github.com/JesFusion](https://github.com/JesFusion)
+### **Let's Connect!**
+
+I am open to **Remote DevOps Roles**, international engineering contracts, and automated infrastructure consultations.
+
+- 📧 **Email**: [jesfusionprox@gmail.com](mailto:jesfusionprox@gmail.com)
+- 💼 **LinkedIn**: [JesFusion LinkedIn](https://www.linkedin.com/in/nwachukwu-jesse-946095330?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+- 💻 **GitHub**: [github.com/JesFusion](https://github.com/JesFusion)
