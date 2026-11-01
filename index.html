@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nwachukwu Jesse Chijioke — DevOps &amp; Cloud Automation Engineer</title>
+<title>JesFusion</title>
 <meta name="description" content="Portfolio of Nwachukwu Jesse Chijioke, a DevOps and Cloud Automation Engineer building automated pipelines, cloud-native infrastructure and self-healing systems.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMGEwZDE0Ii8+CjxjaXJjbGUgY3g9IjMyIiBjeT0iMTQiIHI9IjQuNSIgZmlsbD0iIzAwZjJmZSIvPgo8Y2lyY2xlIGN4PSIxNCIgY3k9IjQyIiByPSI0LjUiIGZpbGw9IiMxMGI5ODEiLz4KPGNpcmNsZSBjeD0iNTAiIGN5PSI0MiIgcj0iNC41IiBmaWxsPSIjMTBiOTgxIi8+CjxjaXJjbGUgY3g9IjMyIiBjeT0iNTAiIHI9IjMuNSIgZmlsbD0iIzAwZjJmZSIvPgo8cGF0aCBkPSJNMzIgMTQgTDE0IDQyIE0zMiAxNCBMNTAgNDIgTTE0IDQyIEwzMiA1MCBNNTAgNDIgTDMyIDUwIE0xNCA0MiBMNTAgNDIiIHN0cm9rZT0iIzAwZjJmZSIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1vcGFjaXR5PSIwLjU1IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo=">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,20 +38,29 @@
 
   <section class="hero">
     <div class="hero-inner">
-      <h1 class="hero-name reveal" data-reveal-order="0">
+      <div class="hero-avatar-wrap reveal" data-reveal-order="0">
+        <div class="hero-avatar">
+          <div class="hero-avatar-frame">
+            <span class="hero-avatar-fallback" aria-hidden="true">NJ</span>
+            <img id="heroAvatarImg" class="hero-avatar-img" src="assets/profile-pic.png"
+                 alt="Nwachukwu Jesse Chijioke">
+          </div>
+        </div>
+      </div>
+      <h1 class="hero-name reveal" data-reveal-order="1">
         <span class="hero-greet">Hi, I'm</span>
         <span class="hero-fullname">Nwachukwu Jesse Chijioke</span>
       </h1>
-      <p class="hero-subline reveal" data-reveal-order="1">
-        I'm a fanatical DevOps &amp; Cloud Automation Engineer.
+      <p class="hero-subline reveal" data-reveal-order="2">
+        Fanatical DevOps &amp; Cloud Automation Engineer.
       </p>
-      <p class="hero-bio reveal" data-reveal-order="2">
+      <p class="hero-bio reveal" data-reveal-order="3">
         I'm driven by one thing: eliminating friction between code and production. I treat every piece
         of infrastructure as code, automate the pipelines so shipping never depends on me being awake,
         and build systems that heal themselves before an alert ever reaches a human. Reliability isn't
-        a feature I bolt on afterward — it's the whole point.
+        a feature I bolt on afterward, it's the whole point.
       </p>
-      <div class="hero-actions reveal" data-reveal-order="3">
+      <div class="hero-actions reveal" data-reveal-order="4">
         <a href="#projects" class="btn btn-ghost">View projects</a>
         <a href="#contact" class="btn btn-solid">Get in touch</a>
       </div>
@@ -70,29 +79,33 @@
       <article class="skill-card reveal-up" data-card="cloud">
         <div class="skill-head">
           <h3>Cloud &amp; IaC</h3>
-          <p class="skill-domain">Amazon Web Services (AWS), Terraform</p>
-        </div>
+          <p class="skill-domain">Amazon Web Services (AWS), Terraform, boto3</p>
+        </div>        
         <div class="skill-visual" aria-hidden="true">
           <svg class="node-net" viewBox="0 0 220 120" preserveAspectRatio="xMidYMid meet">
+            <path class="node-net-cloud"
+              d="M70,68 C55,68 45,56 45,44 C45,33 54,25 64,25 C66,12 79,3 95,3 C111,3 124,12 127,25 C129,24 132,23 135,23 C150,23 162,34 162,48 C162,61 150,68 135,68 Z"
+              fill="rgba(0,242,254,0.1)" stroke="#00f2fe" stroke-width="2"></path>
+
             <g class="node-net-lines" stroke="#00f2fe" stroke-width="1" fill="none">
-              <line x1="30" y1="30" x2="110" y2="20"></line>
-              <line x1="110" y1="20" x2="190" y2="35"></line>
-              <line x1="30" y1="30" x2="60" y2="90"></line>
-              <line x1="110" y1="20" x2="110" y2="80"></line>
-              <line x1="190" y1="35" x2="160" y2="95"></line>
-              <line x1="60" y1="90" x2="110" y2="80"></line>
-              <line x1="110" y1="80" x2="160" y2="95"></line>
+              <line x1="70" y1="68" x2="70" y2="108"></line>
+              <line x1="150" y1="68" x2="150" y2="108"></line>
             </g>
+
             <g class="node-net-dots" fill="#10b981">
-              <circle cx="30" cy="30" r="4.5" style="animation-delay:0s"></circle>
-              <circle cx="110" cy="20" r="4.5" style="animation-delay:.3s"></circle>
-              <circle cx="190" cy="35" r="4.5" style="animation-delay:.6s"></circle>
-              <circle cx="60" cy="90" r="4.5" style="animation-delay:.9s"></circle>
-              <circle cx="110" cy="80" r="4.5" style="animation-delay:1.2s"></circle>
-              <circle cx="160" cy="95" r="4.5" style="animation-delay:1.5s"></circle>
+              <circle cx="70" cy="108" r="4.5" style="animation-delay:0s"></circle>
+              <circle cx="150" cy="108" r="4.5" style="animation-delay:.6s"></circle>
             </g>
+
+            <circle class="node-net-packet packet-in" r="3.5" fill="#10b981">
+              <animateMotion dur="2s" repeatCount="indefinite" path="M70,108 L70,68"></animateMotion>
+            </circle>
+
+            <circle class="node-net-packet packet-out" r="3.5" fill="#00f2fe">
+              <animateMotion dur="2s" begin="1s" repeatCount="indefinite" path="M150,68 L150,108"></animateMotion>
+            </circle>
           </svg>
-        </div>
+</div>
         <p class="skill-footnote">Provisioning reproducible, auditable infrastructure as code.</p>
       </article>
 
@@ -100,7 +113,7 @@
       <article class="skill-card reveal-up" data-card="cicd">
         <div class="skill-head">
           <h3>CI/CD &amp; Automation</h3>
-          <p class="skill-domain">GitHub Actions, Git, Shell Scripting (Bash)</p>
+          <p class="skill-domain">GitHub Actions, Git, POSIX Compliant Shell Scripting</p>
         </div>
         <div class="skill-visual" aria-hidden="true">
           <div class="pipeline">
@@ -128,7 +141,7 @@
       <article class="skill-card reveal-up" data-card="containers">
         <div class="skill-head">
           <h3>Containers &amp; Systems</h3>
-          <p class="skill-domain">Docker, Docker Compose, Linux Architecture</p>
+          <p class="skill-domain">Docker, Kubernetes (k8s), Linux Architecture</p>
         </div>
         <div class="skill-visual" aria-hidden="true">
           <div class="mini-terminal">
@@ -150,22 +163,41 @@
           <h3>Testing &amp; Observability</h3>
           <p class="skill-domain">Python, Pytest, Logging Pipelines, Prometheus, Grafana</p>
         </div>
-        <div class="skill-visual" aria-hidden="true">
-          <svg class="telemetry" viewBox="0 0 220 110" preserveAspectRatio="xMidYMid meet">
-            <g class="telemetry-grid" stroke="rgba(255,255,255,0.08)">
-              <line x1="0" y1="27" x2="220" y2="27"></line>
-              <line x1="0" y1="55" x2="220" y2="55"></line>
-              <line x1="0" y1="83" x2="220" y2="83"></line>
-            </g>
-            <polyline class="telemetry-line" id="telemetryLine" fill="none" stroke="#00f2fe" stroke-width="2"
-              points="0,80 20,70 40,75 60,50 80,60 100,35 120,45 140,25 160,40 180,20 200,30 220,15"></polyline>
-            <polyline class="telemetry-line telemetry-line-alt" fill="none" stroke="#10b981" stroke-width="1.4"
-              points="0,95 20,90 40,92 60,80 80,85 100,70 120,78 140,60 160,72 180,55 200,65 220,50"></polyline>
-          </svg>
+        <div class="skill-visual skill-visual-obs" aria-hidden="true">
+          <div class="obs-panel">
+            <div class="obs-uptime">
+              <span class="obs-uptime-dot"></span>
+              <span class="obs-uptime-text">99.99% uptime</span>
+            </div>
+
+            <div class="obs-metric" data-metric="cpu">
+              <div class="obs-metric-row">
+                <span class="obs-metric-label">CPU</span>
+                <span class="obs-metric-value">—</span>
+              </div>
+              <div class="obs-bar"><div class="obs-bar-fill"></div></div>
+            </div>
+
+            <div class="obs-metric" data-metric="memory">
+              <div class="obs-metric-row">
+                <span class="obs-metric-label">Memory</span>
+                <span class="obs-metric-value">—</span>
+              </div>
+              <div class="obs-bar"><div class="obs-bar-fill"></div></div>
+            </div>
+
+            <div class="obs-metric" data-metric="latency">
+              <div class="obs-metric-row">
+                <span class="obs-metric-label">Latency</span>
+                <span class="obs-metric-value">—</span>
+              </div>
+              <div class="obs-bar"><div class="obs-bar-fill"></div></div>
+            </div>
+          </div>
         </div>
         <p class="skill-footnote">Metrics, logs and traces that surface failure before users do.</p>
       </article>
-
+      
     </div>
   </section>
 
@@ -179,19 +211,21 @@
 
       <article class="project-card reveal-up">
         <div class="project-card-top">
-          <h3>Cloud Infrastructure Automation</h3>
-          <p>Provisioning secure AWS VPC networks and compute clusters dynamically via Terraform.</p>
+          <h3>DeployConf</h3>
+          <p>A registration portal for a DevOps conference, structuring the codebase into isolated frontend and service layers for modular, repeatable deployment.</p>
           <ul class="pill-row">
+            <li class="pill">Docker</li>
             <li class="pill">AWS</li>
-            <li class="pill">Terraform</li>
-            <li class="pill">VPC</li>
-            <li class="pill">IAM</li>
+            <li class="pill">FastAPI</li>
+            <li class="pill">PostgreSQL</li>
+            <li class="pill">GitHub Actions</li>
           </ul>
         </div>
         <div class="project-card-actions">
-          <a href="#" class="btn btn-ghost btn-sm">View repo</a>
-          <a href="#" class="btn btn-solid btn-sm">Live demo</a>
+          <a href="https://github.com/JesFusion/DeployConf" target="_blank" class="btn btn-ghost btn-sm">View repo</a>
+          <!-- <a href="#" class="btn btn-solid btn-sm">Live demo</a> -->
         </div>
+        <p class="skill-footnote">Live Demo will soon be available.</p>
       </article>
 
       <article class="project-card reveal-up">
@@ -231,7 +265,7 @@
         </svg>
       </a>
 
-      <a href="https://www.linkedin.com/in/nwachukwu-jesse-946095330" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn" data-tip="LinkedIn">
+      <a href="https://www.linkedin.com/in/nwachukwu-jesse-946095330?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn" data-tip="LinkedIn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <rect x="3.5" y="3.5" width="17" height="17" rx="2.6"></rect>
           <path d="M7.6 10.2v6.3M7.6 7.6v.1M11.4 16.5v-3.6c0-1.6 1-2.7 2.4-2.7 1.4 0 2.2.9 2.2 2.7v3.6"></path>

@@ -31,7 +31,7 @@
    Reset
    ========================================================= */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -45,6 +45,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--bg-void);
   color: var(--text-hi);
   font-family: var(--font-body);
@@ -74,6 +75,8 @@ img, svg { display: block; max-width: 100%; }
   width: 100%;
   height: 100%;
   z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
   background:
     radial-gradient(ellipse 80% 55% at 50% -10%, rgba(0, 242, 254, 0.08), transparent 60%),
     var(--bg-void);
@@ -204,6 +207,57 @@ img, svg { display: block; max-width: 100%; }
 
 .hero-fullname { color: var(--text-hi); }
 
+/* Hero avatar */
+.hero-avatar-wrap {
+  margin-bottom: 1.6rem;
+}
+
+.hero-avatar {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-emerald));
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.35), 0 0 48px rgba(16, 185, 129, 0.18);
+  animation: avatarFloat 4.6s ease-in-out infinite;
+  contain: layout style;
+}
+
+@keyframes avatarFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.hero-avatar-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: radial-gradient(circle at 35% 28%, #1b2638, #0b0f16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-avatar-fallback {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
+  color: var(--accent-cyan);
+}
+
+.hero-avatar-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .hero-subline {
   font-family: var(--font-mono);
   font-size: clamp(1rem, 1.8vw, 1.15rem);
@@ -276,6 +330,7 @@ img, svg { display: block; max-width: 100%; }
    Section shared
    ========================================================= */
 main, .site-footer { position: relative; z-index: 2; }
+main { overflow-x: hidden; }
 
 .skills, .projects {
   max-width: 1120px;
@@ -309,6 +364,7 @@ main, .site-footer { position: relative; z-index: 2; }
   transition: border-color 0.25s var(--ease-out), transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
   transform-style: preserve-3d;
   will-change: transform;
+  contain: layout style;
 }
 
 .skill-card:hover, .project-card:hover {
@@ -370,6 +426,16 @@ main, .site-footer { position: relative; z-index: 2; }
   0%, 100% { opacity: 0.55; r: 4.5; }
   50% { opacity: 1; r: 6; }
 }
+
+.node-net-cloud { animation: cloudPulse 3.2s ease-in-out infinite; }
+@keyframes cloudPulse {
+  0%, 100% { stroke-opacity: 0.7; }
+  50% { stroke-opacity: 1; }
+}
+
+.node-net-packet { opacity: 0.9; }
+.packet-in { filter: drop-shadow(0 0 3px rgba(16,185,129,0.8)); }
+.packet-out { filter: drop-shadow(0 0 3px rgba(0,242,254,0.8)); }
 
 /* Card 2: pipeline */
 .pipeline {
@@ -457,15 +523,86 @@ main, .site-footer { position: relative; z-index: 2; }
 
 @keyframes blink { 50% { opacity: 0; } }
 
-/* Card 4: telemetry */
-.telemetry { width: 100%; height: 100%; }
-.telemetry-line {
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
-  animation: lineDraw 2.6s var(--ease-out) forwards infinite alternate;
+/* Card 4: observability dashboard */
+.skill-visual-obs {
+  height: auto;
+  align-items: stretch;
+  justify-content: flex-start;
 }
-.telemetry-line-alt { animation-delay: 0.3s; }
-@keyframes lineDraw { to { stroke-dashoffset: 0; } }
+
+.obs-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.obs-uptime {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  padding: 0.3rem 0.7rem 0.3rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.08);
+  margin-bottom: 0.2rem;
+}
+
+.obs-uptime-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55);
+  animation: statusPulse 2.4s ease-out infinite;
+}
+
+.obs-uptime-text {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--accent-emerald);
+  text-shadow: 0 0 12px rgba(16, 185, 129, 0.45);
+}
+
+.obs-metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.32rem;
+}
+
+.obs-metric-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-lo);
+}
+
+.obs-metric-value {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-hi);
+  font-variant-numeric: tabular-nums;
+}
+
+.obs-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+  contain: layout style;
+}
+
+.obs-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald));
+  box-shadow: 0 0 8px rgba(0, 242, 254, 0.45);
+  transition: width 1.1s var(--ease-out);
+}
 
 /* =========================================================
    Projects
@@ -551,6 +688,7 @@ main, .site-footer { position: relative; z-index: 2; }
   color: var(--text-lo);
   transition: transform 0.2s var(--ease-out), border-color 0.2s var(--ease-out),
               color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+  contain: layout style;
 }
 
 .icon-btn svg {
@@ -677,3 +815,5 @@ main, .site-footer { position: relative; z-index: 2; }
   .nav-links a:not(.nav-resume) { display: none; }
   .status-bar { font-size: 0.64rem; }
 }
+
+

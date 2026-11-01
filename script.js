@@ -149,9 +149,14 @@
 
     const commands = [
       'docker build -t njc/service:latest .',
-      'docker compose up -d --build',
+      'kubectl port-forward svc/my-internal-service 8080:80',
+      'docker rmi -f my-old-app:v0.1',
       'systemctl status containerd',
-      'docker ps --format "table {{.Names}}\\t{{.Status}}"'
+      'kubectl top pods --sort-by=memory',
+      'docker -exec -it xxxxxxxx /bin/bash',
+      'kubectl apply -f ./manifests/',
+      'BUILD_KIT=1 docker compose up -d --build',
+      'kubectl explain pod.spec.containers.volumeMounts'
     ];
 
     if (prefersReducedMotion) {
@@ -192,7 +197,72 @@
   }
 
   /* =========================================================
-     5. Smart device-aware phone handler
+     5. Hero avatar — graceful fallback before profile-pic.png exists
+     ========================================================= */
+  function initHeroAvatar() {
+    const img = document.getElementById('heroAvatarImg');
+    if (!img) return;
+
+    // If the image is already broken (e.g. cached 404), hide it immediately.
+    if (img.complete && img.naturalWidth === 0) {
+      img.style.display = 'none';
+      return;
+    }
+
+    img.addEventListener('error', () => {
+      img.style.display = 'none';
+    }, { once: true });
+  }
+
+  /* =========================================================
+     6. Observability panel — live-feeling SRE metric bars
+     ========================================================= */
+  function initObservabilityPanel() {
+    const metricEls = document.querySelectorAll('.obs-metric');
+    if (!metricEls.length) return;
+
+    const CONFIG = {
+      cpu:     { min: 18, max: 58, unit: '%',  start: 34 },
+      memory:  { min: 32, max: 68, unit: '%',  start: 47 },
+      latency: { min: 9,  max: 44, unit: 'ms', start: 21 }
+    };
+
+    const state = [];
+
+    metricEls.forEach((el) => {
+      const cfg = CONFIG[el.dataset.metric];
+      if (!cfg) return;
+      state.push({
+        el,
+        cfg,
+        value: cfg.start,
+        fill: el.querySelector('.obs-bar-fill'),
+        label: el.querySelector('.obs-metric-value')
+      });
+    });
+
+    function render(entry) {
+      const { value, cfg, fill, label } = entry;
+      const pct = ((value - cfg.min) / (cfg.max - cfg.min)) * 100;
+      if (fill) fill.style.width = `${Math.max(6, Math.min(100, pct))}%`;
+      if (label) label.textContent = `${Math.round(value)}${cfg.unit}`;
+    }
+
+    state.forEach(render);
+    if (prefersReducedMotion) return;
+
+    setInterval(() => {
+      state.forEach((entry) => {
+        const span = entry.cfg.max - entry.cfg.min;
+        const drift = (Math.random() - 0.5) * span * 0.3;
+        entry.value = Math.max(entry.cfg.min, Math.min(entry.cfg.max, entry.value + drift));
+        render(entry);
+      });
+    }, 1900);
+  }
+
+  /* =========================================================
+     7. Smart device-aware phone handler
      ========================================================= */
   function isMobileDevice() {
     const uaMatch = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
@@ -271,7 +341,7 @@
   }
 
   /* =========================================================
-     6. Status bar clock
+     8. Status bar clock
      ========================================================= */
   function initStatusClock() {
     const el = document.getElementById('statusClock');
@@ -290,7 +360,7 @@
   }
 
   /* =========================================================
-     7. Footer year
+     9. Footer year
      ========================================================= */
   function initFooterYear() {
     const el = document.getElementById('footerYear');
@@ -302,6 +372,8 @@
     initScrollReveal();
     initCardTilt();
     initTerminalTyping();
+    initHeroAvatar();
+    initObservabilityPanel();
     initPhoneHandler();
     initStatusClock();
     initFooterYear();
