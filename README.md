@@ -9,7 +9,7 @@
 
 I am a DevOps Engineer dedicated to eliminating manual workflows, securing infrastructure, and building fast, resilient continuous delivery pipelines. 
 
-Coming from a background handling data architecture and machine learning systems (MLOps), I bring unique value to core engineering operations. I excel at containerizing complex software, handling data-heavy workloads, and architecting self-healing environments where reliability is non-negotiable.
+I bring unique value to core engineering operations. I excel at containerizing complex software, handling data-heavy workloads, and architecting self-healing environments where reliability is non-negotiable.
 
 #### **What I Bring to Engineering Teams**
 - **CI/CD & Pipeline Automation** – Designing multi-stage validation and deployment pipelines using **GitHub Actions** and Git workflows to accelerate ship-to-production speeds.
