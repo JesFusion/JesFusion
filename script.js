@@ -299,6 +299,9 @@
   }
 
   function showToast(message) {
+    // Only one toast at a time, so repeated clicks don't stack popups.
+    document.querySelectorAll('.toast').forEach((t) => t.remove());
+
     const toast = document.createElement('div');
     toast.className = 'toast';
     toast.setAttribute('role', 'status');
@@ -340,6 +343,16 @@
     });
   }
 
+  /* Greyed-out buttons (e.g. "Live demo") show a popup instead of navigating */
+  function initToastButtons() {
+    document.querySelectorAll('[data-toast]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showToast(btn.dataset.toast);
+      });
+    });
+  }
+
   /* =========================================================
      8. Status bar clock
      ========================================================= */
@@ -375,7 +388,12 @@
     initHeroAvatar();
     initObservabilityPanel();
     initPhoneHandler();
+    initToastButtons();
     initStatusClock();
     initFooterYear();
   });
 })();
+
+
+
+

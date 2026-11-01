@@ -326,6 +326,23 @@ img, svg { display: block; max-width: 100%; }
 
 .btn-sm { padding: 0.55rem 1rem; font-size: 0.85rem; }
 
+/* Greyed-out, non-navigating button with a slow shine (e.g. "Live demo") */
+.btn-disabled {
+  font-family: var(--font-body);
+  color: #aab0c0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(110deg, #353b49 0%, #596073 45%, #353b49 90%);
+  background-size: 220% 100%;
+  animation: greyShimmer 3.2s linear infinite;
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover { filter: none; }
+
+@keyframes greyShimmer {
+  to { background-position: -220% 0; }
+}
+
 /* =========================================================
    Section shared
    ========================================================= */
@@ -389,7 +406,7 @@ main { overflow-x: hidden; }
    ========================================================= */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.3rem;
 }
 
@@ -505,12 +522,14 @@ main { overflow-x: hidden; }
 }
 
 .mini-terminal-body {
-  padding: 0.8rem 0.7rem;
+  padding: 0.6rem 0.7rem;
   font-family: var(--font-mono);
   font-size: 0.78rem;
+  line-height: 1.5;
   color: var(--accent-emerald);
-  min-height: 1.6rem;
-  white-space: nowrap;
+  min-height: calc(3em + 1.2rem);   /* reserves room for 2 lines so the box doesn't jump */
+  white-space: normal;
+  word-break: break-all;            /* wrap like a real terminal, even mid-word */
   overflow: hidden;
 }
 
@@ -609,7 +628,7 @@ main { overflow-x: hidden; }
    ========================================================= */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.3rem;
 }
 
@@ -637,17 +656,9 @@ main { overflow-x: hidden; }
 
 .project-card-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 1.6rem;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.22s var(--ease-out), transform 0.22s var(--ease-out);
-}
-
-.project-card:hover .project-card-actions,
-.project-card:focus-within .project-card-actions {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* =========================================================
@@ -806,7 +817,7 @@ main { overflow-x: hidden; }
    Responsive
    ========================================================= */
 @media (max-width: 860px) {
-  .skills-grid, .projects-grid { grid-template-columns: 1fr; }
+  .skills-grid, .projects-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { min-height: auto; padding-top: 3rem; }
   .nav-links { gap: 1.1rem; font-size: 0.85rem; }
 }
@@ -814,6 +825,8 @@ main { overflow-x: hidden; }
 @media (max-width: 520px) {
   .nav-links a:not(.nav-resume) { display: none; }
   .status-bar { font-size: 0.64rem; }
+  .mini-terminal-body { min-height: calc(4.5em + 1.2rem); }
 }
+
 
 
